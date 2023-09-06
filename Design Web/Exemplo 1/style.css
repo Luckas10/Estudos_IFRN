@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 10%;
+}
+
+header, footer {
+    height: 120px;
+    width: 100%;
+    background-color: green;
+}
+
+aside {
+    width: 20%;
+    height: 100vh;
+    background-color: aqua;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+aside > ul {
+    list-style-type: none;
+    padding: 0 20px;
+}
+
+section {
+    width: 80%;
+    height: 100vh;
+    margin: -4px;
+    vertical-align: top;
+    background-color: beige;
+    display: inline-block;
+    border: 1px solid black;
+}
