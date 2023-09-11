@@ -127,6 +127,7 @@ class App:
 
 
     def Sair(self):
+        self.janela.destroy()
         exit()
 
 
