@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Shrink</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            height: 200px;
+            flex-direction: row;
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        .item {
+            border: 1px solid black;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet reprehenderit id, quas adipisci ex veniam aliquam aliquid cupiditate, laborum, necessitatibus ea. Illo esse corporis vel perferendis accusamus soluta omnis veritatis.</div>
+        <div class="item">Texto 2</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eos possimus, veritatis ducimus quisquam fugiat veniam amet modi sed aliquam quos, facilis commodi pariatur officiis quaerat, ea incidunt rerum soluta.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eos possimus, veritatis ducimus quisquam fugiat veniam amet modi sed aliquam quos, facilis commodi pariatur officiis quaerat, ea incidunt rerum soluta.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eos possimus, veritatis ducimus quisquam fugiat veniam amet modi sed aliquam quos, facilis commodi pariatur officiis quaerat, ea incidunt rerum soluta.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eos possimus, veritatis ducimus quisquam fugiat veniam amet modi sed aliquam quos, facilis commodi pariatur officiis quaerat, ea incidunt rerum soluta.</div>
+    </div>
+
+    <br>
+
+    <div class="container" style="width: 300px;">
+        <div class="item" style="width: 200px; flex-shrink: 4;">
+            Texto muito português
+        </div>
+        <div class="item" style="width: 200px; flex-shrink: 1;">
+            Texto muito português
+        </div>
+    </div>
+
+</body>
+</html>

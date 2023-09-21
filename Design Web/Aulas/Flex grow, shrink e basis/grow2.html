@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Grow 2</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            width: 600px;
+            height: 100%;
+            flex-direction: column;
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        .item {
+            border: 1px solid black;
+            /* Elemento estica */
+            flex-grow: 1;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="item">
+            Caixa 1
+        </div>
+        <div class="item">
+            Caixa 2
+        </div>
+    </div>
+
+</body>
+</html>
