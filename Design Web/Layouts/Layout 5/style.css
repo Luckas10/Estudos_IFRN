@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+.navegation_header {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 5px;
+    background-color: lightgray;
+}
+
+.header,
+.rodape,
+.link {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.header {
+    justify-content: space-between;
+    padding: 0 5%;
+    height: 60px;
+    background-color: orange;
+}
+
+.header .title h1 {
+    color: white;
+    text-align: center;
+}
+
+.header {
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;    
+    height: 100%;
+}
+
+.conteudo {    
+    background-color: gray;
+    flex-grow: 1;
+}
+
+.rodape {
+    height: 40px;
+    justify-content: center;
+    font-weight: 600;
+    color: white;
+    background-color: orange;
+}
+
+.cards {
+    display: flex;
+    flex: 1;
+    border: 1px solid white;
+    flex-direction: column;
+    background-color: white;
+    margin: 15px;
+}
+
+.botoesNav {
+    width: 350px;
+    height: 60px;
+    border-radius: 0;
+    color: orange;
+    background-color: white;
+    font-size: 16pt;
+}
+
+.conteudo {
+    display: flex;
+}
+
+.imgmacaco {
+    margin: 15px;
+    width: 95%;
+    height: 50%;
+}
+
+p {
+    flex-grow: 1;
+    margin: 20px;
+}
+
+.cards button {
+    padding: 10px;
+    margin: 15px;
+}
