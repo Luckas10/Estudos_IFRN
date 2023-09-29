@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans";
+}
+
+.header {
+    height: 8px;
+    background-color: #0669de;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imgContaGlobo {
+    padding-top: 24px;
+}
+
+#textoConta {
+    color: #333333;
+    font-family: "Open Sans";
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.textoInfo {
+    color: #666666;
+    font-size: 14px;
+    font-weight: normal;
+    padding-top: 26px;
+    display: block;
+}
+
+#textoSenha {
+    color: #666666;
+}
+
+
+.inputs {
+    margin-top: 7px;
+    outline: none;
+    border: 1px solid #666666;
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+}
+
+#textoSenha {
+    margin-top: -7px;
+}
+
+.linkEsquecidos {
+    padding-top: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #0669de;
+}
+
+.botaoEntrar {
+    width: 301px;
+    height: 38px;
+    background-color: #0669de;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    border: 0px;
+    border-bottom: 2px solid #044FA6;
+    border-radius: 3px;
+    margin-top: 44px;
+}
+
+#linkCadastrar {
+    text-decoration: none;
+    color: #0669de;
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+.divider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17px;
+}
+
+.divider h1 {
+    font-size: 14px;
+    padding-bottom: 5px;
+    color: #666666;
+    font-weight: normal;
+}
+
+.divider div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linha {
+    width: 81.925px;
+    height: 1px;
+    background-color: #D8D8D8;
+}
+
+.botoes {
+    margin-top: 17px;
+    display: flex;
+    flex-direction: row;
+    width: 301px;
+    justify-content: space-between;
+}
+
+.botaoRedesSociais {
+    width: 148.5px;
+    height: 40px;
+    box-shadow: inset 0 -2px rgba(0,0,0,.25);
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.textosBtn {
+    font-size: 15px;
+    color: #757575;
+    font-weight: bold;
+}
+
+.copy {
+    margin-top: 29px;
+    width: 301px;
+    margin-bottom: 177px;
+}
+
+.copyParagrafo {
+    font-size: 14px;
+    color: #333333;
+}
+
+.copyLink {
+    text-decoration: none;
+    color: #0669de;
+    font-weight: bolder;
+}
+
+button:hover {
+    cursor: pointer;
+}

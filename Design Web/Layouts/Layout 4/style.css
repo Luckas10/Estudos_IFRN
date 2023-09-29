@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: black;
+}
+
+.menuLateral img {
+    width: 16px; 
+    height: 10px;
+    margin-left: 30px;
+}
+
+.linkEntrar {
+    color: white;
+    text-decoration: none;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heroImg {
+    width: 52%;
+    height: auto;
+}
+
+.caixaTextoHero {
+    width: 350px;
+    height: 50px;
+}
+
+.textos {
+    padding-left: 80px;
+}
+
+#maratona4meses {
+    color: white;
+    font-size: 15.5px;
+    font-family: "Open Sans";
+}
+
+#planoAnual {
+    color: #00FE66;
+    font-family: "Open Sans";
+}
+
+#botaoConteudo1 {
+    background-color: #E6161B;
+    color: white;
+}
+
+#botaoConteudo2 {
+    margin-top: 15px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.botoesConteudo {
+    border-radius: 10px;
+    border: 0px;
+    height: 46px;
+    display: block;
+    width: 370px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.botoesConteudo:hover {
+    cursor: pointer;
+}
+
+#valorAntigo {
+    text-decoration: line-through;
+    color: #B6B4B7;
+    font-size: 14px;
+}
+
+#valorReal {
+    padding: 10px 0px 10px 0px;
+}
+
+#valorTotal {
+    font-size: 14px;
+    color: #B6B4B7;
+}
+
+.valores {
+    font-size: 13px;
+}
+
+.divValores {
+    padding-left: 45px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#t12x {
+    font-size: 20px;
+}
+
+#t1490 {
+    font-size: 32px;
+    font-weight: bold;
+}

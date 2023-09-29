@@ -1,0 +1,164 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #191919;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 103px;
+}
+
+#mensagem_inicial {
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    margin-top: 13px;
+    font-size: 23px;
+    word-spacing: 2px;
+    letter-spacing: 0.5px;
+}
+
+#logos_globo {
+    margin-top: 36px;
+}
+
+#email {
+    font-family: "Open Sans", sans-serif;
+    color: #D8D8D8;
+    margin-bottom: 14px;
+    font-size: 16px;
+}
+
+.login {
+    margin-top: 40px;
+}
+
+#input {
+    width: 475px;
+    height: 45px;
+    padding-top: 2px;
+    border-radius: 8px;
+    background-color: #191919;
+    border: 1px solid #D8D8D8;
+    color: white;
+    padding-left: 10px;
+}
+
+#input::placeholder {
+    font-family: Calibri;
+    font-size: 20px;
+    font-style: italic;
+    color: #D8D8D8;
+}
+
+#continuar {
+    width: 485px;
+    height: 48px;
+    background-color: #F5F5F5;
+    color: #191919;
+    border-radius: 8px;
+    margin-top: 32px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#continuar:hover {
+    background-color: #D8D8D8;
+    cursor: pointer;
+}
+
+#outra_opção {
+    font-family: "Open Sans";
+    color: white;
+    margin-top: 42px;
+    font-size: 17px;
+}
+
+.outras_opções {
+    margin-top: 26px;
+}
+
+.opção {
+    display: flex;
+    width: 485px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    background-color: #191919;
+    border: 1px solid #D8D8D8;
+    color: #F5F5F5;
+    border-radius: 8px;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.opção:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+#entrar_google {
+    margin-bottom: 16px;
+}
+#logo_google {
+    width: 25px;
+    height: 25px;
+    padding-right: 8px;
+}
+
+#logo_facebook {
+    width: 25px;
+    height: 25px;
+    padding-right: 8px;
+}
+
+.cadastro {
+    margin-top: 30px;
+}
+
+#cadastrar {
+    color: white;
+    font-size: 18px;
+    font-family: "Open Sans";
+
+}
+
+#cadastrar_link {
+    color: #99C3FF;
+    font-weight: bolder;
+    font-size: 18px;
+    font-family: "Open Sans";
+}
+
+.termos {
+    width: 445px;
+    margin-top: 40px;
+    background-color: #333333;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+#texto_termos {
+    color: white;
+    font-size: 16px;
+    font-family: "Open Sans"
+}
+
+#link_termos {
+    color: #99C3FF;
+    font-size: 16px;
+    font-family: "Open Sans";
+    font-weight: bold;
+}
