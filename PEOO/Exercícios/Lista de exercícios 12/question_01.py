@@ -134,6 +134,7 @@ class App:
             text=".",
             height=1,
             width=6,
+            command=self.Ponto,
         )
         self.botaoPonto.place(x=80.3, y=212.1)
 
@@ -276,6 +277,12 @@ class App:
         self.temp = "0"
         self.operacao = "/"
         self.label1["text"] = self.temp
+
+    
+    def Ponto(self):
+        if "." not in self.temp:
+            self.temp += "."
+            self.label1['text'] = self.temp
 
 
     def Resultado(self):
