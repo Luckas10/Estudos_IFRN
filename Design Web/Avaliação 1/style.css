@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.menuInicial {
+    display: flex;
+}
+
+.linkInicial {
+    margin: 30px 30px 30px 30px;
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-basis: 5px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: row;
+}
+
+.artigos, .artigos1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.artigo {
+    background-color: #FAEBD7;
+    margin: 10px;
+    border-radius: 20px;
+    height: 500px;
+}
+
+.painelBotao {
+    display: flex;
+    background-color: #822F80;
+    height: 400px;
+    margin: 10px;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.painelContato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    margin: 10px;
+    background-color: #FBE5A5;
+    border-radius: 25px;
+}
+
+.painelLateral {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1550px;
+}
+
+.btnLateral {
+    width: 125px;
+    color: black;
+    background-color: #FFA300;
+    border-radius: 50px;
+    border: 0px;
+    height: 30px;
+}
+
+.artigo2 {
+    background-color: #FAEBD7;
+    margin: 10px;
+    border-radius: 20px;
+    height: 300px;
+}
+
+.artigos2 {
+    display: flex;
+}
