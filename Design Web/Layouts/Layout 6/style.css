@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFC017;
+    height: 75px;
+    border-bottom: 1px solid black;
+}
+
+.itemsHeader {
+    display: flex;
+    width: 88.5%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ButtonGetStarted {
+    height: 38px;
+    width: 104.09px;
+    border: none;
+    border-radius: 99em;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.linksHeader {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 416px;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    padding-right: 8px;
+}
