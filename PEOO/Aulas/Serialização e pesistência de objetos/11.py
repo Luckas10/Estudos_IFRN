@@ -31,10 +31,12 @@ class App:
         self.janela.mainloop()
 
     def vercotacao(self):
-        consulta = requests.get("https://economia.awesomeapi.com.br/last/USD-BRL")
-        cotacao = consulta.json()['USDBRL']['bid']
-        self.textoNome2['text'] = (f"Cotação do dolar atual: R${cotacao}")
-        print(f"")
-
+        try:    
+            consulta = requests.get("https://economia.awesomeapi.com.br/last/USD-BRL")
+            cotacao = consulta.json()['USDBRL']['bid']
+            self.textoNome2['text'] = (f"Cotação do dolar atual: R${cotacao}")
+        except:
+            self.textoNome2['text'] = (f"O seu dispositivo está sem internet")
+            
     
 app = App()
