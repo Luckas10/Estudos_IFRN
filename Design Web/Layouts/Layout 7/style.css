@@ -1,0 +1,98 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
+    background-color: #F03E30;
+}
+
+.textHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textLetsGo, .textLetsGo a {
+    color: white;
+    font-family: 'Scandia Web';
+    font-size: 14px;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.menuLateral {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 100%;
+    min-width: 26.6%;
+    background-color: #F5F5FA;
+}
+
+.logoLaravelLateral {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-right: 70px;
+}
+
+.menuPrincipal {
+    height: 100%;
+    min-width: 73.4%;
+    background-color: #FFFFFF;
+}
+
+@font-face {
+    font-family: 'Scandia Web';
+    src: url(Scandia-Regular.woff2);
+}
+
+@media screen and (max-width: 1000px){
+    .menu{
+        display: none;
+    }
+
+    .inputs {
+        display: flex;
+    }
+
+    .menuLateral {
+        display: flex;
+        font-size: 30px;
+    }
+
+    #nav-button {
+        display: none;
+    }
+
+    #nav-button:checked ~ .menu{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+}
