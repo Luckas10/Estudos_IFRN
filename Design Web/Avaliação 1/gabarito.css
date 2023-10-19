@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.navbar {
+    display: flex;
+    flex: 0 0 80px;
+    border-bottom: 1px solid gray;
+    padding-left: 40px;
+}
+
+.navbar .menu {
+    display: flex;        
+    flex: 0;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.menu ul li {
+    margin: 0px 10px;
+}
+
+.menu ul li:hover {
+    color: orange;
+}
+
+.main {
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.main .section {
+    display: flex;    
+    padding: 20px;
+    flex-wrap: wrap;
+    flex-basis: 70%;
+    flex-grow: 1;        
+}
+
+.main .aside {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;    
+    flex: 1 1 auto;
+    min-width: 30%;
+}
+
+.section .card {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 300px;
+    padding: 10px;
+    margin: 5px;  
+    background-color: antiquewhite;  
+    border-radius: 5px;
+}
+
+.button {    
+    background-color: orange;
+    border-radius: 25px;    
+    text-decoration: none;
+    margin: 0 20px;    
+    padding: 10px;    
+}
+
+.email {
+    margin: 5px 0;
+}
+
+.aside .card-trial {
+    display: flex;    
+    flex: 1 0 400px;    
+    align-items: center;
+    justify-content: center;
+    background-color: purple;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.aside .card-contact {
+    display: flex;
+    flex-direction: column;    
+    flex: 1 0 400px;    
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(251, 229, 165);
+    border-radius: 5px;
+}
