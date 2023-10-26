@@ -2,22 +2,30 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .header {
     display: flex;
+    flex: 1 1 auto;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     background-color: #FFC017;
     height: 75px;
-    border-bottom: 1px solid black;
 }
 
-.itemsHeader {
+.itensHeader {
     display: flex;
-    width: 88.5%;
-    justify-content: space-between;
+    flex: 1 1 auto;
     align-items: center;
+    justify-content: space-between;
+    background-color: #FFC017;
+    height: 75px;
+    padding: 0px 75px;
+}
+
+.logoSVG {
+    margin: 0px -5px;
 }
 
 .ButtonGetStarted {
@@ -34,11 +42,38 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 416px;
 }
 
 .link {
     text-decoration: none;
     color: black;
     padding-right: 8px;
+}
+
+.outdoor {
+    display: flex;
+    height: 449px;
+    background-color: #FFC017;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.outdoor h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-size: 80pt;
+}
+
+.div1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.divDentro{
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
 }
