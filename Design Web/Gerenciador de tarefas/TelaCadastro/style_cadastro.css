@@ -53,10 +53,11 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 110px;
+    height: 220px;
 }
 
 .container .inputs input {
+    height: 45px;
     width: 300px;
     padding: 15px;
     background-color: #D1D0F9;

@@ -9,16 +9,52 @@
 </head>
 <body>
     <div class="container">
-        <div class="main">
-            <div class="barra_lateral">
-                <img src="home.png" class="botão">
-                <img src="agenda.png" class="botão">
-                <img src="adicionar.png" class="botão">
-                <img src="notificação.png" class="botão">
-                <img src="login.png" class="botão">
+        <div class="barra_lateral">
+            <button class="botao"><img src="./imagens/home.png" class="img_barra_lateral"></button>
+            <button class="botao"><img src="./imagens/agenda.png" class="img_barra_lateral"></button>
+            <button class="botao"><img src="./imagens/adicionar.png" class="img_barra_lateral"></button>
+            <button class="botao"><img src="./imagens/notificação.png" class="img_barra_lateral"></button>
+            <button class="botao"><img src="./imagens/login.png" class="img_barra_lateral"></button>
+        </div>
+        <div class="conteudo">
+            <div class="cabecalho">
+                <button class="botao_perfil">
+                        <img src="./imagens/massaru_miamoto.png" id="imagem_usuario">
+                </button>
+                <div class="texto_cabecalho_1">
+                    <span id="ola">Olá,</span>
+                    <span id="massaru_miamoto">Massaru Miamoto!</span>
+                </div>
             </div>
-            <div class="conteúdo">
-                <img src="massaru miamoto.png" id="imagem_usuário">
+            <div class="texto_cabecalho_2">
+                <span id="">Vamos checar suas tarefas de hoje.</span>
+            </div>
+            <div class="posts">
+                <div class="linha" id="linha_1">
+                    <div class="post" id="post_1">
+                        <p id="porcentagem_numerica">50% completado</p>
+                        <div class="full_barra">
+                            <div id="barra_de_porcentagem"><div id="porcentagem"></div></div>
+                        </div>
+                        <div class="caderno">
+                            <div class="texto_post">
+                                <span class="texto_post1">You have 3 more</span>
+                                <span class="texto_post1">tasks to do!</span>
+                                <button id="botao_post1">Detalhes</button>
+                            </div>
+                            <img src="imagens/caderno_tarefas.png" id="caderno_img">
+                        </div>
+                    </div>
+                    <div class="post" id="post_2">
+                    
+                    </div>
+                </div>
+                <div class="linha" id="linha_2">
+                    <div class="post" id="post_3">
+                    </div>
+                    <div class="post" id="post_4">
+                    </div>
+                </div>
             </div>
         </div>
     </div>

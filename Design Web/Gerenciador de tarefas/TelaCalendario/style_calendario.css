@@ -1,0 +1,180 @@
+/* Especificações padrões */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #f6f2ff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Barra Lateral */
+
+.menuLateral {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #6368D9;
+    width: 60px;
+    height: 100vh;
+}
+
+.botao {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+.img_barra_lateral {
+    width: 30px;
+    height: 30px;
+}
+
+/* Parte do conteúdo */
+
+.container .conteudo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Título/Cabeçalho da página */
+
+.conteudo .header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 11.5%;
+}
+
+.conteudo .header > h1 {
+    color: #6368D9;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+/* Botões dos dias do mês */
+
+.conteudo .buttonsCalendar {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 10%;
+}
+
+.buttonsCalendar .buttonDay {
+    background-color: #D1D0F9;
+    border: none;
+    border-radius: 10px;
+    width: 60px;
+}
+
+.conteudo .buttonsCalendar .buttonDay h1 {
+    font-size: 16px;
+    padding-bottom: 3px;
+    color: white;
+}
+
+.conteudo .buttonsCalendar .buttonDay h2 {
+    font-size: 16px;
+    color: white;
+}
+
+/* Botões do progresso das tarefas */
+
+.conteudo .buttonsTaskProgress {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 9.5%;
+    width: 100%;
+}
+
+.conteudo .buttonsTaskProgress > button {
+    height: 40px;
+    width: 200px;
+    border: none;
+    border-radius: 20px;
+    background-color: #D1D0F9;
+}
+
+.conteudo .buttonsTaskProgress button > p {
+    color: #6368D9;
+}
+
+/* Mostrador de tarefas */
+
+.conteudo .taskRectangle {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 69%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.conteudo .taskRectangle .task {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #D1D0F9;
+    border-radius: 10px;
+    width: 96.3%;
+    height: 20%;
+}
+
+.taskRectangle .textTask {
+    font-size: 16px;
+    padding-left: 7px;
+    font-weight: 500;
+    color: #6368D9;
+}
+
+.conteudo .taskRectangle .task > h2 {
+    font-weight: bold;
+}
+
+.taskRectangle .textIcon {
+    padding-left: 7px;
+}
+
+.taskRectangle .textIcon .clockIcon {
+    width: 20px;
+    height: 20px;
+}
+
+.textIcon {
+    display: flex;
+    align-items: center;
+}
+
+/* Responsividade */
+
+@media screen and (max-width:1080px) {
+    body {
+        height: 100vh;
+    }
+
+    .buttonDay {
+        display: none;
+    }
+}
