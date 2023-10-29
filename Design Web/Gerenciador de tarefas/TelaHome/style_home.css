@@ -11,6 +11,10 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+button {
+    cursor: pointer;
+}
+
 .container {
     display: flex;
     width: 100%;

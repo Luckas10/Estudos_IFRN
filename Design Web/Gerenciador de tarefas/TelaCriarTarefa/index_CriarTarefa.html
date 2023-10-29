@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_CriarTarefa.css">
+    <title>Criar tarefa - task manager</title>
+</head>
+<body>
+    <div class="container">
+        <div class="barra_lateral">
+            <a href="../TelaHome/index_home.html"><button class="botao"><img src="../TelaHome/Imagens/home.png" class="img_barra_lateral"></button></a>
+            <a href="../TelaCalendario/index_calendario.html"><button class="botao"><img src="../TelaHome/Imagens/agenda.png" class="img_barra_lateral"></button></a>
+            <a href="../TelaCriarTarefa/index_CriarTarefa.html"><button class="botao"><img src="../TelaHome/Imagens/adicionar.png" class="img_barra_lateral"></button></a>
+            <a href="../TelaNotificacao/index_notificacao.html"><button class="botao"><img src="../TelaHome/Imagens/notificação.png" class="img_barra_lateral"></button></a>
+            <a href="../TelaPerfil/index_perfil.html"><button class="botao"><img src="../TelaHome/Imagens/login.png" class="img_barra_lateral"></button></a>
+        </div>
+
+        <div class="conteudo"> 
+            <div class="header">
+                <button class="backButton"><img src="./Imagens/backIcon.png" alt=""></button>
+                <h1>Criar tarefa</h1>
+            </div>
+
+            <div class="initialInputs">
+                <div class="divInput">
+                    <h1 class="titleInput">Título</h1>
+                    <input style="width: 100%" type="text">
+                </div>
+                <div class="divInput">
+                    <h1 class="titleInput">Data</h1>
+                    <input style="width: 100%;" type="date">
+                </div>
+                <div class="timeInputs">
+                    <div class="timeInput">
+                        <h1>Hora de início</h1>
+                        <input type="time">
+                    </div>
+                    <div class="timeInput">
+                        <h1>Hora do fim</h1>
+                        <input type="time">
+                    </div>
+                </div>
+            </div>
+
+            <div class="categorias">
+                <div class="categorias2">
+                    <h1>Categoria</h1>
+                    <div class="rowButtons">
+                        <button class="categoryButton">Coisas da faculdade</button>
+                        <button class="categoryButton">Trabalho</button>
+                        <button class="categoryButton">Vida social</button>
+                    </div>
+                </div>
+                <div class="categorias2">
+                    <div class="rowButtons">
+                        <button class="categoryButton">Estudos</button>
+                        <button class="categoryButton">Projeto pessoal</button>
+                        <button class="categoryButton">Lar</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="descricao">
+                <div class="descricaoInterior">
+                    <h1>Descrição</h1>
+                    <input type="text">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

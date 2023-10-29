@@ -1,30 +1,35 @@
-/* Especificações padrões */
-
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    margin: 0;
 }
 
 body {
     height: 100vh;
-    background-color: #f6f2ff;
+    background-color: #F6F2FF;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.container {
-    display: flex;
-    height: 100vh;
-    width: 100%;
 }
 
 button {
     cursor: pointer;
 }
 
-/* Barra Lateral */
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
 
-.menuLateral {
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* === Barra Lateral === */
+
+.barra_lateral {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -39,14 +44,12 @@ button {
     height: 30px;
     background-color: transparent;
     cursor: pointer;
-    border: none;
 }
 
 .img_barra_lateral {
     width: 30px;
     height: 30px;
 }
-
 /* Parte do conteúdo */
 
 .container .conteudo {

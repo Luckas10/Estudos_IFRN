@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_notificacao.css">
+    <title>Home - Task Manager</title>
+</head>
+<body>
+    <div class="container">
+        <div class="barra_lateral">
+            <a href="../TelaHome/index_home.html"><button class="botao"><img src="../TelaHome/Imagens/home.png" class="img_barra_lateral"></button></a>
+            <a href="../TelaCalendario/index_calendario.html"><button class="botao"><img src="../TelaHome/Imagens/agenda.png" class="img_barra_lateral"></button></a>
+            <a href="../TelaCriarTarefa/index_CriarTarefa.html"><button class="botao"><img src="../TelaHome/Imagens/adicionar.png" class="img_barra_lateral"></button></a>
+            <a href="../TelaNotificacao/index_notificacao.html"><button class="botao"><img src="../TelaHome/Imagens/notificação.png" class="img_barra_lateral"></button></a>
+            <a href="../TelaPerfil/index_perfil.html"><button class="botao"><img src="../TelaHome/Imagens/login.png" class="img_barra_lateral"></button></a>
+        </div>
+        <div class="conteudo">
+            <h1 id="titulo" style="color:#6368D9">Notificações</h1>
+            <div class="nots">
+                <div class="notsbox">
+                    <h2>Hoje</h2>
+                <p><span id="tempo">12:50 p.m</span><br>Massaro, você tem <span id="tarefa">aula de yoga</span> para daqui <span id="tarefa">15 minutos</span>.</p>
+                <p><span id="tempo">14:50 p.m</span><br>Parabéns, você completou a tarefa <span id="tarefa">aula de yoga</span>.</p>
+                <p><span id="tempo">16:40 p.m</span><br>Massaro, você tem que <span id="tarefa">desamassar miamoto</span> hoje.</p>
+                </div>
+                <div class="notsbox">
+                    <h2>Ontem</h2>
+                    <p><span id="tempo">6:00 a.m</span><br>Massaro, você não tem tarefas para hoje.<br>Para criar uma tarefa, <a href="../TelaCriarTarefa/index_CriarTarefa.html" style="text-decoration: none; color:#6368D9; font-weight: 600;">clique aqui</a></p>
+                </div>
+                <div class="notsbox">
+                    <h2>Anteontem</h2>
+                    <p><span id="tempo">11:50 a.m</span><br>Massaro, você precisa ir para a <span id="tarefa">Reunião de Classe</span> agora mesmo!</p>
+                    <p><span id="tempo">18:20 p.m</span><br>Fim da tarefa <span id="tarefa">Reunião de Classe</span>.</p>
+                    <p><span id="tempo">18:30 p.m</span><br>Massaro, hora de <span id="tarefa">fazer o jantar</span>. Aproveite e escolha uma receita nova para experimentar!</p>
+                    <p><span id="tempo">21:50 p.m</span><br>Massaro, hora de <span id="tarefa">dormir</span>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

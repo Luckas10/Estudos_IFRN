@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: #F6F2FF;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* === Barra Lateral === */
+
+.barra_lateral {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #6368D9;
+    width: 60px;
+    height: 100vh;
+}
+
+.botao {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.img_barra_lateral {
+    width: 30px;
+    height: 30px;
+}
+
+/* Título/Cabeçalho da página */
+
+.conteudo .header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 11.5%;
+}
+
+.conteudo .header > h1 {
+    color: #6368D9;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+/* Parte do main */
+
+.main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.row {
+    width: 50%;
+    height: 100%;
+}
+
+/* Perfil */
+
+.profile {
+    display: flex;
+    flex-direction: row;
+}
+
+.imgProfile {
+    border-radius: 1000px; 
+    border: 2px solid #6368D9;
+    width: 150px;
+    height: 150px;
+}
+
+.buttonEditProfile {
+    background-color: #D1D0F9;
+    border-radius: 50px;
+    width: 60%;
+    height: 20%;
+    color: #6368D9;
+}
+
+.textPerfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}

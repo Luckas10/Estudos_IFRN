@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: #F6F2FF;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.nots {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.notsbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+
+/* === Barra Lateral === */
+
+.barra_lateral {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #6368D9;
+    width: 60px;
+    height: 100vh;
+}
+
+.botao {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.img_barra_lateral {
+    width: 30px;
+    height: 30px;
+}
+
+/* === Formatações === */
+
+h1#titulo {
+    margin: 15px 0 35px 0;
+}
+
+.notsbox h2 {
+    font-weight: 600;
+    color: #6368D9;
+    margin-bottom: 15px;
+}
+
+.notsbox p {
+    font-weight: 300;
+    margin: 15px 0;
+    color: #6368D9;
+    background-color: #d1d0f9;
+    border-radius: 25px;
+    padding: 10px;
+    min-width: 100%;
+}
+
+span#tarefa {
+    font-weight: 600;
+}
