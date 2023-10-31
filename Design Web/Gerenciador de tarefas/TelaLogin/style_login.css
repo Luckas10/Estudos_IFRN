@@ -126,46 +126,20 @@ h1 {
     justify-content: space-between;
 }
 
-/* 
+
+/* Responsividade */
+
 @media screen and (max-width:1080px) {
     body {
         height: 100vh;
     }
 
-    .container {
-        background-color: #f6f2ff;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
+    .imagemLogin {
+        display: none;
     }
 
-    .inputs {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        justify-content: space-around;
-        height: 20%;
-        width: 60%;
+    .squareLogin {
+        border-radius: 20px;
     }
 
-    input {
-        background-color: #d1d0f9;
-        height: 30%;
-        border-radius:  75px;
-        font-size: 35px;
-        border: none;
-    }
-
-    input::placeholder {
-        padding-left: 10%;
-        padding-top: 2%;
-        font-size: 40px;
-        color: #7174dd;
-    }
-
-    h1 {
-        font-size: 100px;
-    }
-} */
+}

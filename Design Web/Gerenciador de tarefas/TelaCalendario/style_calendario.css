@@ -170,14 +170,8 @@ button {
     align-items: center;
 }
 
-/* Responsividade */
+/* Responsividade
 
 @media screen and (max-width:1080px) {
-    body {
-        height: 100vh;
-    }
 
-    .buttonDay {
-        display: none;
-    }
-}
+} */

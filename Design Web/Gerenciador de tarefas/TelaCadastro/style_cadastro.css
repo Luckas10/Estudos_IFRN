@@ -110,7 +110,7 @@ h1 {
 .botaoRedesSociais {
     width: 148.5px;
     height: 40px;
-    box-shadow: inset 0 -2px rgba(0,0,0,.25);
+    box-shadow: inset 0 -2px rgba(0, 0, 0, .25);
     border: 1px solid #dbdbdb;
     border-radius: 3px;
     display: flex;
@@ -127,46 +127,25 @@ h1 {
     justify-content: space-between;
 }
 
-/* 
+/* Responsividade */
+
 @media screen and (max-width:1080px) {
     body {
         height: 100vh;
     }
 
-    .container {
-        background-color: #f6f2ff;
-        display: flex;
-        flex-direction: column;
+    .imagemLogin {
+        display: none;
+    }
+
+    .squareLogin {
+        border-radius: 20px;
+    }
+
+    .squareCompleto {
         align-items: center;
         justify-content: center;
-        height: 100%;
+        background-color: white;
     }
 
-    .inputs {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        justify-content: space-around;
-        height: 20%;
-        width: 60%;
-    }
-
-    input {
-        background-color: #d1d0f9;
-        height: 30%;
-        border-radius:  75px;
-        font-size: 35px;
-        border: none;
-    }
-
-    input::placeholder {
-        padding-left: 10%;
-        padding-top: 2%;
-        font-size: 40px;
-        color: #7174dd;
-    }
-
-    h1 {
-        font-size: 100px;
-    }
-} */
+}
