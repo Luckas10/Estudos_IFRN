@@ -50,8 +50,9 @@ button {
     justify-content: space-around;
     align-items: center;
     background-color: #6368D9;
-    width: 60px;
+    width: 5%;
     height: 100vh;
+    order: 0;
 }
 
 .botao {
@@ -90,4 +91,29 @@ h1#titulo {
 
 span#tarefa {
     font-weight: 600;
+}
+
+
+/* === Redimensionar === */
+
+@media screen and (max-width: 1080px){
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: flex-end;
+    }
+
+    .barra_lateral {
+        order: 1;
+        width: 100%;
+        height: 10%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .opa {
+        display: none;
+    }
 }

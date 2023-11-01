@@ -35,8 +35,9 @@ button {
     justify-content: space-around;
     align-items: center;
     background-color: #6368D9;
-    width: 60px;
+    width: 5%;
     height: 100vh;
+    order: 0;
 }
 
 .botao {
@@ -202,3 +203,34 @@ button {
     height: 18%;
     color: #6368D9;
 }
+
+/* Responsividade */
+
+@media screen and (max-width:1080px) {
+    .container {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .barra_lateral {
+        order: 1;
+        width: 100%;
+        height: 10%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .main {
+        height: 100%;
+    }
+
+    #row_2 {
+        display: none;
+    }
+
+    #row_1 {
+        justify-content: center;
+        width: 100%;
+        height: 150%;
+    }
+} 
