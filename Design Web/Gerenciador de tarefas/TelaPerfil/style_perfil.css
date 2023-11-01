@@ -210,6 +210,11 @@ button {
     .container {
         flex-direction: column;
         justify-content: space-between;
+        height: 100vh;
+    }
+
+    .conteudo {
+        height: 100%;
     }
 
     .barra_lateral {
@@ -218,6 +223,10 @@ button {
         height: 10%;
         flex-direction: row;
         justify-content: space-around;
+    }
+
+    .header {
+        margin-top: 10px;
     }
 
     .main {
@@ -231,6 +240,6 @@ button {
     #row_1 {
         justify-content: center;
         width: 100%;
-        height: 150%;
+        height: 100%;
     }
 } 

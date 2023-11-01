@@ -105,6 +105,10 @@ span#tarefa {
         justify-content: flex-end;
     }
 
+    .conteudo {
+        height: 100%;
+    }
+
     .barra_lateral {
         order: 1;
         width: 100%;
