@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Cadastro</title>
+  <style>
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Cadastro</h2>
+  <form id="cadastroForm" onsubmit="return validarForm()">
+    <label for="matricula">Matrícula:</label>
+    <input type="text" id="matricula" name="matricula" required>
+    <span id="matriculaError" class="error"></span><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <span id="emailError" class="error"></span><br>
+
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required><br>
+
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" name="senha" required>
+    <span id="senhaError" class="error"></span><br>
+
+    <input type="submit" value="Cadastrar">
+  </form>
+
+  <script>
+    function validarForm() {
+      // Obter valores dos campos
+      var matricula = document.getElementById('matricula').value;
+      var email = document.getElementById('email').value;
+      var senha = document.getElementById('senha').value;
+
+      // Validar matrícula
+      var matriculaRegex = /^\d{6}$/;
+      if (!matriculaRegex.test(matricula)) {
+        document.getElementById('matriculaError').innerHTML = 'Matrícula inválida';
+        return false;
+      } else {
+        document.getElementById('matriculaError').innerHTML = '';
+      }
+
+      // Validar formato do email
+      var emailRegex = /^[a-zA-Z0-9._-]+@ifrn\.edu\.br$/;
+      if (!emailRegex.test(email)) {
+        document.getElementById('emailError').innerHTML = 'Email inválido (deve ser @ifrn.edu.br)';
+        return false;
+      } else {
+        document.getElementById('emailError').innerHTML = '';
+      }
+
+      // Validar senha
+      if (senha.length < 10) {
+        document.getElementById('senhaError').innerHTML = 'A senha deve conter mais de 10 caracteres';
+        return false;
+      } else {
+        document.getElementById('senhaError').innerHTML = '';
+      }
+
+      // Se todas as validações passarem, o formulário é enviado
+      return true;
+    }
+  </script>
+
+</body>
+</html>
