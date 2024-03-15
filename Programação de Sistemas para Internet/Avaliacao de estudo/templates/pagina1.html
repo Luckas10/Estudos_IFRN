@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 1</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100vh;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .pagina {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 20%;
+            height: 20%;
+        }
+
+        .pagina a {
+            text-decoration: none;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            border-radius: 50px;
+            border: 1px solid black;
+        }
+
+        .pagina:hover {
+            border-radius: 50px;
+            background-color: rgb(181, 255, 193);
+            transition: 0.5s;
+            width: 22%;
+            height: 22%;
+        }
+
+        .pagina:not(:hover) {
+            border-radius: 50px;
+            transition: 0.5s;
+        }
+
+        .pagina a h1,
+        .pagina a p {
+            margin: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="pagina">
+        <a href="{{url_for('pagina2')}}">
+            <p style="font-size: 16pt;">Clique para mudar de página</p>
+            <h1 style="font-size: 30pt;">Página 1</h1>
+        </a>
+    </div>
+
+</body>
+
+</html>
