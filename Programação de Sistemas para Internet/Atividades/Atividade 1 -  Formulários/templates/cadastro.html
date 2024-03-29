@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Eventos</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1,
+        h2 {
+            color: #6368D9;
+        }
+
+        body {
+            height: 100vh;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: #F6F2FF;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            height: 8%;
+            background-color: #6368D9;
+            justify-content: space-between;
+        }
+
+        header h2 {
+            color: white;
+            margin: 0% 3%;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 92%;
+        }
+
+        .evento {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            height: 90%;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .painel-evento {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            border-radius: 20px;
+            box-shadow: 1px 1px 10px #6368D9;
+            width: 40%;
+            height: 80%;
+            background-color: white;
+        }
+
+        .inputs {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 70%;
+            width: 80%;
+            align-items: center;
+        }
+
+        .inputs input {
+            height: 12%;
+            width: 80%;
+            padding: 0 6%;
+            background-color: #D1D0F9;
+            border-radius: 25px;
+            border: 0px;
+            outline: none;
+        }
+
+        .inputs input::placeholder {
+            color: #6368D9;
+        }
+
+        button {
+            padding: 1%;
+            font-size: 11pt;
+            border-radius: 10px;
+            border: 0px;
+            background-color: #6368D9;
+            color: white;
+            box-shadow: 1px 1px 6px #6368D9;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h2 class="title-page">João Lucas - Eventos</h2>
+        <h2 class="title-page">Cadastro</h2>
+    </header>
+
+    <div class="container">
+
+        <div class="evento">
+
+            <h1 style="text-align: center;">Cadastre-se no <br> workshop designer</h1>
+
+            <form class="inputs" action="{{ url_for('cadastro') }}" method="POST">
+                <div class="painel-evento">
+                    <input class="inputName" type="text" placeholder="Nome completo" name="nome">
+                    <input class="inputNumber" type="text" placeholder="Número de acompanhantes"
+                        name="acompanhantes">
+                    <input class="inputEmail" type="email" placeholder="E-mail" name="email">
+                </div>
+                <button class="buttonLogin">Cadastre-se</button>
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
