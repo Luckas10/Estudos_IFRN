@@ -38,7 +38,7 @@ Através de um método de modelagem é possível, seguindo regras e etapas deter
 as definições de baixa abstração (simples) até
 as com alta complexidade (abstratas).
 
-![Mundo_real](Images/Mundo_real.png)
+![Mundo_real](Imagens/Mundo_real.png)
 
 ### 🌎 Mundo Real:
 
