@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados</title>
+</head>
+<body>
+    <h1>Resultados</h1>
+    <ul>
+        {% for distancia, tempo in resultados %}
+            <li>Distância: {{ distancia }}, Tempo: {{ tempo }}</li>
+        {% else %}
+            <li>Sem resultados registrados.</li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('add_result') }}">Adicionar Mais Resultados</a>
+</body>
+</html>

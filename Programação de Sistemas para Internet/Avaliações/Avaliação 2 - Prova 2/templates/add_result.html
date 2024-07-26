@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Resultados</title>
+</head>
+<body>
+    <h1>Adicionar Resultados</h1>
+    <form method="post">
+        <label for="distancia">Distância:</label>
+        <input type="text" id="distancia" name="distancia" required>
+        <label for="tempo">Tempo:</label>
+        <input type="text" id="tempo" name="tempo" required>
+        <button type="submit">Adicionar</button>
+    </form>
+    <a href="{{ url_for('results') }}">Ver Resultados</a>
+</body>
+</html>
