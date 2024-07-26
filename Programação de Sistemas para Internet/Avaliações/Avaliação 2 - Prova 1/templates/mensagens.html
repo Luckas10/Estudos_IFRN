@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mensagens</title>
+</head>
+<body>
+    <h1>Enviar Mensagem</h1>
+    <form method="POST">
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <h2>Mensagens Enviadas</h2>
+    {% for mem in lista_mensagem %}
+        <p>{{ mem }}</p>
+    {% endfor %}
+</body>
+</html>
