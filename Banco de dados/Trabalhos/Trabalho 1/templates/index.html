@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p>
+        {% for usuarios in dados %}
+            ID DO JOGADOR:
+            {{ usuarios['jog_id']}}
+            | NOME DO JOGADOR:    
+            {{ usuarios['jog_nome'] }}
+            |   DATA DE NASCIMENTO:
+            {{ usuarios['jog_data_de_nascimento'] }}
+            </br>
+        {% endfor %}
+    </p>
+
+</body>
+</html>
