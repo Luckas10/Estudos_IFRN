@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block conteudo %}
+<div class="text-center">
+    <h2 class="mb-4">Home</h2>
+    <a href="{{ url_for('login') }}" class="btn btn-primary mb-3">Login</a>
+    <a href="{{ url_for('register') }}" class="btn btn-primary mb-3">Cadastrar-se</a>
+</div>
+{% endblock %}

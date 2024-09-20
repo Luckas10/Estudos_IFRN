@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block conteudo %}
+             
+<form action="{{ url_for('login') }}" method="post">
+    <div class="mb-3">
+        <input class="form-control" type="email" name="email" placeholder="Email">
+    </div>
+    <div class="mb-3">
+        <input class="form-control" type="text" name="cpf" placeholder="CPF">
+    </div>
+    <div class="mb-3">
+        <input class="form-control" type="password" name="senha" placeholder="Senha">
+    </div>
+    <button class="btn btn-primary">Enviar</button>
+</form>
+
+<h2>{{ verificador }}</h2>
+
+<a href="{{ url_for('index') }}" class="btn btn-secondary mt-3">Voltar para a Home</a>
+
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block title %}Registro{% endblock %}
+
+{% block conteudo %}
+             
+<form action="{{ url_for('register') }}" method="post">
+    <div class="mb-3">
+        <input class="form-control" type="text" name="tipo_usuario" placeholder="Tipo do Usuário">
+    </div>
+    <div class="mb-3">
+        <input class="form-control" type="text" name="nome" placeholder="Nome">
+    </div>
+    <div class="mb-3">
+        <input class="form-control" type="email" name="email" placeholder="Email">
+    </div>
+    <div class="mb-3">
+        <input class="form-control" type="text" name="cpf" placeholder="CPF">
+    </div>
+    <div class="mb-3">
+        <input class="form-control" type="password" name="senha" placeholder="Senha">
+    </div>
+    <div class="mb-3">
+        <input class="form-control" type="password" name="confirmacao_senha" placeholder="Confirme sua senha">
+    </div>
+    <button class="btn btn-primary">Enviar</button>
+</form>
+
+<h2>{{ status }}</h2>
+
+<a href="{{ url_for('index') }}" class="btn btn-secondary mt-3">Voltar para a Home</a>
+
+{% endblock %}

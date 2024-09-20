@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+
+{% block title %}Listar Tecnologias{% endblock %}
+
+{% block conteudo %}
+<h1 class="mb-4">Tecnologias Cadastradas</h1>
+
+{% if lista %}
+    <ul class="list-group">
+        {% for tecnologia in lista %}
+            <li class="list-group-item">{{ tecnologia.nome }} ({{ tecnologia.sigla }}): {{ tecnologia.descricao }}</li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p class="text-muted">Nenhuma tecnologia encontrada.</p>
+{% endif %}
+
+<a href="{{ url_for('dash') }}" class="btn btn-secondary mt-3">Voltar para o Dashboard</a>
+{% endblock %}

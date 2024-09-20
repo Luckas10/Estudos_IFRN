@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block title %}Adicionar Tecnologia{% endblock %}
+
+{% block conteudo %}
+<h2 class="mb-4">Adicione uma nova tecnologia</h2>
+
+<form action="{{ url_for('add_tecnologia') }}" method="post">
+    <div class="mb-3">
+        <input class="form-control" type="text" name="nome" placeholder="Nome">
+    </div>
+    <div class="mb-3">
+        <input class="form-control" type="text" name="sigla" placeholder="Sigla">
+    </div>
+    <div class="mb-3">
+        <input class="form-control" type="text" name="descricao" placeholder="Descrição">
+    </div>
+    <button class="btn btn-primary">Enviar</button>
+</form>
+
+<a href="{{ url_for('dash', tipo_usuario=current_user.tipo_usuario) }}" class="btn btn-secondary mt-3">Voltar para o Dashboard</a>
+{% endblock %}
