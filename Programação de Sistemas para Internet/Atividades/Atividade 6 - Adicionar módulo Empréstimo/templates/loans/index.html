@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Lista de Empréstimos</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>Lista de Empréstimos</h1>
+        <a href="{{ url_for('loans.register') }}" class="btn btn-primary">Adicionar</a>
+        <hr>
+        {% for loan in loans %}
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h5 class="card-title">Título: {{ loan.titulo }}</h5>
+                    <p class="card-text">Emprestado para: {{ loan.nome }}</p>
+                    <p class="card-text">Data de Empréstimo: {{ loan.data_emprestimo }}</p>
+                    <p class="card-text">Data de Devolução: {{ loan.data_devolucao }}</p>
+                    <a href="{{ url_for('loans.return_book', loan_id=loan.loan_id, book_id=loan.book_id) }}" class="btn btn-danger">Devolver</a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

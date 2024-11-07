@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Registro de Usuários</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>Registro de Usuários</h1>
+        <div>
+            <h2>Dados</h2>
+            <form action="{{url_for('users.register')}}" method="post">
+                <div class="form-group">
+                    <input type="email" name="email" class="form-control" placeholder="Email" value="{{request.form['email']}}">
+                    {% with error = get_flashed_messages() %}
+                        {% if error %}
+                            <span class="text-danger">{{ error[0] }}</span>
+                        {% endif %}
+                    {% endwith %}
+                </div>
+                <div class="form-group">
+                    <input type="text" name="nome" class="form-control" placeholder="Nome" value="{{request.form['nome']}}">
+                </div>
+                <button type="submit" class="btn btn-success">Enviar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

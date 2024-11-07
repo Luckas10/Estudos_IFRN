@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Books - Register</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>Registrar Livros</h1>
+        <div>
+            <h2>Dados</h2>
+            <form action="{{url_for('books.register')}}" method="post">
+                <div class="form-group">
+                    <input type="text" name="titulo" class="form-control" placeholder="Título" value="{{request.form['titulo']}}">
+                </div>
+                <div class="form-group">
+                    <select name="user" class="form-control">
+                        {% for user in users %}
+                            <option value="{{user.id}}">{{user.nome}}</option>    
+                        {% endfor %}                
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-success">Enviar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

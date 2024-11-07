@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Lista de Livros</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>Lista de Livros</h1>
+        <a href="{{url_for('books.register')}}" class="btn btn-primary">Adicionar</a>
+        <hr>
+        {% for book in books %}
+            <p class="lead">{{ book.titulo }}</p>
+        {% endfor %}
+    </div>
+</body>
+</html>
