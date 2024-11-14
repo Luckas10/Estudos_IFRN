@@ -23,7 +23,7 @@ def index():
     users = User.query.all()
     return render_template('pages/index.html', users=users)
 
-
+        
 @app.route('/create', methods=['POST', 'GET'])
 def create():
     if request.method == 'POST':
