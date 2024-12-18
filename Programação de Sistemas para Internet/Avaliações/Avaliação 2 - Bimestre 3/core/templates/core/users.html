@@ -1,0 +1,28 @@
+{% extends 'layouts/layout.html' %}
+
+{% block page_title %}
+    Usuários
+{% endblock %}
+
+{% block content %}
+
+<div class="users">
+    <div class="page-header">
+        <h1>
+            Lista de Usuários
+        </h1>
+        <a href="#">Adicionar</a>
+    </div>
+    <div class="user-header">
+        <p>Nome: </p>
+        <p>Email: </p>
+    </div>
+    {% for usuario in usuarios %}
+    <div class="user">
+        <p>Nome: <span>{{ usuario.nome }}</span></p>
+        <p>Email: <span>{{ usuario.email }}</span></p>
+    </div>
+    {% endfor %}
+</div>
+    
+{% endblock %}
