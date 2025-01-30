@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <h2 class="mb-4">Clientes</h2>
+    <form method="post" class="row g-3 mb-4">
+        <div class="col-md-4">
+            <input type="text" name="rg" class="form-control" placeholder="RG" required>
+        </div>
+        <div class="col-md-4">
+            <input type="text" name="nome" class="form-control" placeholder="Nome" required>
+        </div>
+        <div class="col-md-4">
+            <input type="text" name="telefone" class="form-control" placeholder="Telefone" required>
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </div>
+    </form>
+    <ul class="list-group">
+        {% for cliente in clientes %}
+            <li class="list-group-item">
+                <strong>{{ cliente.nome }}</strong> - RG: {{ cliente.rg }} - Telefone: {{ cliente.telefone }}
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
