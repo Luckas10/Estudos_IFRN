@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gerenciador de Tarefas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Gerenciador de Tarefas</h1>
+    <div class="button-group">
+      <button onclick="openModal('registerModal')">Cadastrar Tarefas</button>
+      <button onclick="openModal('listModal')">Listar Tarefas</button>
+    </div>
+  </div>
+
+  <!-- Modal de Cadastro -->
+  <div id="registerModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('registerModal')">&times;</span>
+      <h2>Cadastrar Tarefa</h2>
+      <form id="taskForm">
+        <label>Descrição:</label>
+        <input type="text" id="Description" name="Description" required />
+
+        <label>Prioridade:</label>
+        <input type="number" id="Priority" name="Priority" required />
+
+        <label>Concluída?</label>
+        <div class="radio-group">
+          <label><input type="radio" name="Status" value="Sim" required /> Sim</label>
+          <label><input type="radio" name="Status" value="Não" /> Não</label>
+        </div>
+
+        <button type="submit">Salvar</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal de Listagem -->
+  <div id="listModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('listModal')">&times;</span>
+      <h2>Lista de Tarefas</h2>
+      <div id="taskListContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
