@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biblioteca do Joãozinho</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Biblioteca do Joãozinho</h1>
+        <div class="button-group">
+            <button onclick="openModal('registerModal')">Cadastrar novo livro</button>
+            <button onclick="openModal('listModal')">Listar livros cadastrados</button>
+            <button onclick="openModal('searchModal')">Buscar livro</button>
+            <button onclick="openModal('userModal')">Cadastrar novo usuário</button>
+            <button onclick="openModal('loanModal')">Realizar empréstimo</button>
+        </div>
+    </div>
+
+    <!-- Modal de Cadastro de Novo Livro -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('registerModal')">&times;</span>
+            <h2>Cadastrar novo livro</h2>
+            <form id="taskForm">
+                <label>Título:</label>
+                <input type="text" id="Titulo" name="Titulo" required />
+
+                <label>Autor:</label>
+                <input type="number" id="Autor" name="Autor" required />
+
+                <label>Ano:</label>
+                <input type="date" id="Ano" name="Ano" required />
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal de Listagem de Livros -->
+    <div id="listModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('listModal')">&times;</span>
+            <h2>Lista de livros</h2>
+            <div id="taskListContent"></div>
+        </div>
+    </div>
+
+    <!-- Modal de Buscar Livros -->
+    <div id="searchModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('searchModal')">&times;</span>
+            <h2>Buscar livro</h2>
+
+            <label>Título:</label>
+            <input type="text" id="Titulo" name="Titulo" required />
+
+            <button type="submit">Buscar</button>
+
+            <div id="searchListContent"></div>
+        </div>
+    </div>
+
+    <!-- Modal de Cadastro de Novo Usuário -->
+    <div id="userModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('userModal')">&times;</span>
+            <h2>Cadastrar novo usuário</h2>
+            <form id="taskForm">
+                <label>Nome:</label>
+                <input type="text" id="Nome" name="Nome" required />
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal de Realizar Empréstimo -->
+    <div id="loanModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('loanModal')">&times;</span>
+            <h2>Realizar empréstimo</h2>
+            <form id="taskForm">
+                <label>UUID do Usuário:</label>
+                <input type="text" id="UUIDUser" name="UUIDUser" required />
+
+                <label>UUID do Livro:</label>
+                <input type="text" id="UUIDUser" name="UUIDUser" required />
+
+                <label>Data do empréstimo:</label>
+                <input type="date" id="Ano" name="Ano" required />
+
+                <button type="submit">Realizar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
