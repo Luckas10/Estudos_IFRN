@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dango balango</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <form action="">
+        <label for="nome">Nome da Biblioteca</label>
+        <input type="text" name="nome">
+        <input type="submit" value="Enviar" onclick="cadastrar_biblioteca();">
+    </form>
+
+    <script>
+        const dados = {
+            nome: $('input[name="nome"]').val(),
+        }
+
+        function cadastrar_biblioteca () {
+            $.ajax({
+                url: "http://157.0.0.1:8000/bibliotecas",
+                type: "POST",
+                dataType: "json",
+                data: JSON.stringify(dados),
+                success: function () {
+                    alert("Cadastrado com sucesso");
+                },
+                error: function () {
+                    alert("Erro");
+                }
+            })
+        }
+
+    </script>
+</body>
+</html>
